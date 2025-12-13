@@ -3,10 +3,10 @@ import { useState } from "react";
 import hydrogenium from '../../../assets/hydrogenium.png';
 import ochki from '../../../assets/ochki.png';
 import nos from '../../../assets/nos.png'
-import naushniknax from '../../../assets/naushniknax.png'
 import maskaOq from '../../../assets/maskaOq.png'
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import naushnik2 from "../../../assets/naushnik2.png";
 
 export default function Section7() {
   const [activeTab, setActiveTab] = useState("procedure");
@@ -96,7 +96,7 @@ ${message}`;
       id: "headphones",
       label: "QULOQCHINLAR",
       title: "Quloqchinlar",
-      image: naushniknax,
+      image: naushnik2,
       description: <>Vodorod eshitish tizimiga ta’sir qiladi.</>,
     },
     {

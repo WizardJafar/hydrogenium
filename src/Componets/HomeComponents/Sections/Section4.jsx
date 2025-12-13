@@ -13,7 +13,7 @@ export default function Section4() {
         },
         {
             title: "Hydrogenium",
-            youtubeId: "YCZ5fbYxePk"
+            youtubeId: "siTQQGvbbGg"
         },
         // Добавляйте новые так же:
         // { title: "Название", youtubeId: "ID_ролика" }

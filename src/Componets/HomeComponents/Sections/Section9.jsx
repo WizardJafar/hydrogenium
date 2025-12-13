@@ -21,7 +21,7 @@ export default function Section9() {
             <div className="max-w-7xl mx-auto px-6">
                 <div className="text-center mb-16">
                     <h2 className="text-5xl md:text-6xl font-bold" style={{ color: '#4a86ad' }}>
-                        Natijalar<br />ta’siri
+                        Muolaja <br />ta’siri
                     </h2>
                     <p className="mt-6 text-lg text-gray-700 max-w-3xl mx-auto">
                         Vodorod — organizm uchun tabiiy gaz bo‘lib, inson tanasida ijobiy jarayonlarni ishga tushiradi.
