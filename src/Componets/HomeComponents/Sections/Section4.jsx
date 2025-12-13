@@ -22,7 +22,7 @@ export default function Section4() {
 // fsko;djf;o'jghpiEWHWEH
 // jfdsjfjs
     return (
-        <section className="py-16 bg-white">
+        <section className="py-16 bg-white" >
             <div className="text-center mb-12 px-4">
                 <AnimatedContent
                     distance={40}

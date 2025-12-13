@@ -1,4 +1,14 @@
+import { useState } from "react";
+
 export default function Footer() {
+    const [isOpen, setIsOpen] = useState(false);
+    const scrollToSection = (id) => {
+        const el = document.getElementById(id);
+        if (el) {
+            el.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+
     return (
         <footer className="bg-gray-800 text-gray-300 py-16">
             <div className="max-w-7xl mx-auto px-6">
@@ -47,19 +57,12 @@ export default function Footer() {
                         <h4 className="text-white font-bold text-lg mb-6">КОНТАКТЫ</h4>
                         <div className="space-y-4 text-sm">
                             <p className="leading-relaxed">
-                                Москва,<br />
-                                Алтуфьевское ш. 27<br />
-                                офис 23
+                                Tashkent, Uzbekistan,<br />
+                                Aybek Street 44,<br />
                             </p>
                             <p className="text-lg font-medium text-white">
-                                +7 (495) 240-91-21
+                                +998 90 933 66 00
                             </p>
-                            <a
-                                href="mailto:info@h2genium.ru"
-                                className="block text-[#4a86ad] hover:underline"
-                            >
-                                info@h2genium.ru
-                            </a>
                         </div>
                     </div>
 

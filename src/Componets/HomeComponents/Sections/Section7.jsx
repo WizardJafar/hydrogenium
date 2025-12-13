@@ -1,4 +1,3 @@
-// Section7 — Процедура
 'use client';
 import { useState } from "react";
 import hydrogenium from '../../../assets/hydrogenium.png';
@@ -6,12 +5,59 @@ import ochki from '../../../assets/ochki.png';
 import nos from '../../../assets/nos.png'
 import naushniknax from '../../../assets/naushniknax.png'
 import maskaOq from '../../../assets/maskaOq.png'
-
-
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Section7() {
   const [activeTab, setActiveTab] = useState("procedure");
+
+  const [open, setOpen] = useState(false);
+  const [phone, setPhone] = useState("998");
+  const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  const BOT_TOKEN = "8559354625:AAFOExAj1BTe2tR2A4O8r_htOMl0ATtPk60";
+  const CHAT_ID = "-5083792285";
+
+  const sendToTelegram = async () => {
+    if (!phone || phone.length < 12) {
+      toast.error("Telefon raqamini to‘liq kiriting");
+      return;
+    }
+
+    if (!message.trim()) {
+      toast.error("Xabar bo‘sh bo‘lishi mumkin emas");
+      return;
+    }
+
+    setLoading(true);
+
+    const text = `998
+📞 Telefon: ${phone}
+📝 Xabar:
+${message}`;
+
+    try {
+      await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          chat_id: CHAT_ID,
+          text,
+        }),
+      });
+
+      toast.success("So‘rov muvaffaqiyatli yuborildi");
+
+      setPhone("998");
+      setMessage("");
+      setOpen(false);
+    } catch {
+      toast.error("Yuborishda xatolik yuz berdi");
+    } finally {
+      setLoading(false);
+    }
+  };
 
   const tabs = [
     {
@@ -28,7 +74,7 @@ export default function Section7() {
           • Quloqchinlar<br />
           • Vodorodli SPA maska / Ingalyatsiya maskasi
           <br /><br />
-          Protsedura davomiyligi vodorod oqimiga bog‘liq bo‘lib, <strong>15 dan 45 daqiqagacha</strong> davom etadi.
+          Protsedura davomiyligi <strong>15–45 daqiqa</strong>.
         </>
       ),
     },
@@ -37,54 +83,28 @@ export default function Section7() {
       label: "BURUN KANALLARI",
       title: "Burun kanallari",
       image: nos,
-      description: (
-        <>
-          Vodorod nafas yo‘llari orqali o‘pkaga kiradi, u yerda alveolalarda bosim gradienti tufayli alveolyar membranalardan o‘tib, kislorod kabi tizimli qon oqimiga kiradi.
-          <br /><br />
-          Qonga kirgan vodorod butun organizmga tarqaladi, hujayra orasi bo‘shliqlar va hujayralarga kirib, o‘z ta’sirini ko‘rsatadi.
-        </>
-      ),
+      description: <>Vodorod nafas yo‘llari orqali o‘pkaga kiradi.</>,
     },
     {
       id: "glasses",
       label: "KO‘Z OYNAKLAR",
       title: "Ko‘z oynaklari",
       image: ochki,
-      description: (
-        <>
-          Vodorod ko‘tarilgan bosim ostida (oynaklarning mahkam yopishishi tufayli) kiritiladi.
-          <br /><br />
-          Vodorod shox parda orqali erkin o‘tib, ko‘zning barcha tuzilmalariga (to‘r parda, shishasimon tana, linza, ko‘rish nervi va boshq.) ta’sir qiladi hamda ko‘zning tomirli qavati orqali tizimli qon oqimiga kiradi.
-        </>
-      ),
+      description: <>Vodorod ko‘z tuzilmalariga ta’sir qiladi.</>,
     },
     {
       id: "headphones",
       label: "QULOQCHINLAR",
       title: "Quloqchinlar",
       image: naushniknax,
-      description: (
-        <>
-          Amalga oshirish yuqori bosim ostida (quloqchinlarning mahkam yopishishi tufayli).
-          <br /><br />
-          Vodorod tashqi eshitish yo‘li va quloq pardasi orqali eshitish va muvozanat organining barcha tuzilmalariga kiradi.
-        </>
-      ),
+      description: <>Vodorod eshitish tizimiga ta’sir qiladi.</>,
     },
     {
       id: "mask",
       label: "VODORODLI SPA MASKA",
       title: "Vodorodli SPA maska",
       image: maskaOq,
-      description: (
-        <>
-          Vodorod silikon muhr bilan tashqi muhitdan yopiq maskaga beriladi.
-          <br /><br />
-          SPA maskada tashqi havo bilan nafas olish uchun burun portali mavjud bo‘lib, bu maska ostidagi maksimal vodorod konsentratsiyasini ta’minlaydi.
-          <br /><br />
-          O‘rnatilgan isitish elementi va bug‘ generatoridan keladigan harorat va namlik vodorodning kirib borish qobiliyatini va yuz terisi hujayralarining yoshartiruvchi ta’sirini kuchaytiradi, mikroqon aylanishini yaxshilaydi, metabolizmni tezlashtiradi va hujayralarni namlaydi.
-        </>
-      ),
+      description: <>Isitish va namlik samaradorlikni oshiradi.</>,
     },
   ];
 
@@ -93,14 +113,16 @@ export default function Section7() {
   return (
     <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        {/* Tabs */}
         <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 md:gap-6 lg:gap-10 text-sm sm:text-base lg:text-lg font-medium pb-4 border-b border-gray-200 overflow-x-auto">
-          {tabs.map((tab) => (
+          {tabs.map(tab => (
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`pb-3 px-2 sm:px-0 border-b-4 transition-all duration-300 whitespace-nowrap text-center flex-shrink-0 ${activeTab === tab.id
-                ? "text-[#4a86ad] border-[#4a86ad]"
-                : "text-gray-500 border-transparent hover:text-[#4a86ad]"
+              className={`pb-3 px-2 border-b-4 transition-all whitespace-nowrap ${activeTab === tab.id
+                  ? "text-[#4a86ad] border-[#4a86ad]"
+                  : "text-gray-500 border-transparent"
                 }`}
             >
               {tab.label}
@@ -108,33 +130,73 @@ export default function Section7() {
           ))}
         </div>
 
-        <div className="mt-8 sm:mt-12 md:mt-16 lg:mt-20 grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-20 items-center">
-          <div className="order-2 lg:order-1">
-            <img
-              src={current.image}
-              alt={current.title}
-              className="w-full h-auto max-h-[400px] sm:max-h-[500px] lg:max-h-none rounded-xl sm:rounded-2xl shadow-2xl object-cover"
-            />
-          </div>
+        {/* Content */}
+        <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+          <img
+            src={current.image}
+            alt={current.title}
+            className="w-full rounded-2xl shadow-2xl object-cover"
+          />
 
-          <div className="order-1 lg:order-2">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6 md:mb-8" style={{ color: '#4a86ad' }}>
+          <div>
+            <h2 className="text-4xl lg:text-6xl font-bold mb-8 text-[#4a86ad]">
               {current.title}
             </h2>
-            <div className="text-base sm:text-lg text-gray-700 space-y-4 sm:space-y-6 leading-relaxed">
+
+            <div className="text-lg text-gray-700 leading-relaxed">
               {current.description}
             </div>
+
             <button
-              className="mt-8 sm:mt-10 md:mt-12 w-full sm:w-auto px-8 sm:px-10 py-4 sm:py-5 rounded-full text-white text-base sm:text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+              onClick={() => setOpen(true)}
+              className="mt-12 px-10 py-5 rounded-full text-white text-lg font-semibold shadow-lg"
               style={{ backgroundColor: '#4a86ad' }}
-              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#3d7394'}
-              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#4a86ad'}
             >
               MASLAHAT OLISH
             </button>
           </div>
         </div>
       </div>
+
+      {/* Modal */}
+      {open && (
+        <div className="fixed inset-0 bg-black/40 flex items-center justify-center z-50">
+          <div className="bg-white rounded-xl p-6 w-full max-w-md">
+            <input
+              type="tel"
+              value={phone}
+              onChange={e => setPhone(e.target.value)}
+              className="w-full mb-4 px-4 py-3 border rounded-lg"
+            />
+
+            <textarea
+              rows={4}
+              placeholder="Xabaringiz"
+              value={message}
+              onChange={e => setMessage(e.target.value)}
+              className="w-full mb-6 px-4 py-3 border rounded-lg resize-none"
+            />
+
+            <div className="flex gap-4">
+              <button
+                onClick={() => setOpen(false)}
+                className="flex-1 py-3 border rounded-lg"
+              >
+                Yopish
+              </button>
+
+              <button
+                onClick={sendToTelegram}
+                disabled={loading}
+                className="flex-1 py-3 rounded-lg text-white"
+                style={{ backgroundColor: '#4a86ad' }}
+              >
+                {loading ? "Yuborilmoqda..." : "Yuborish"}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
