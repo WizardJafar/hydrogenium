@@ -4,10 +4,6 @@ export default function Section4() {
 
     const videos = [
         {
-            title: "Hydrogenium",
-            youtubeId: "YCZ5fbYxePk"
-        },
-        {
             title: "Vodorod kapsulalari",
             youtubeId: "Vk-63EZi4Rg"
         },
@@ -15,12 +11,16 @@ export default function Section4() {
             title: "NAD+ geli",
             youtubeId: "TuDKiYeqFp0"
         },
+        {
+            title: "Hydrogenium",
+            youtubeId: "YCZ5fbYxePk"
+        },
         // Добавляйте новые так же:
         // { title: "Название", youtubeId: "ID_ролика" }
     ];
-//zXkd;s;fjkdskjf;k
-// fsko;djf;o'jghpiEWHWEH
-// jfdsjfjs
+    //zXkd;s;fjkdskjf;k
+    // fsko;djf;o'jghpiEWHWEH
+    // jfdsjfjs
     return (
         <section className="py-16 bg-white" >
             <div className="text-center mb-12 px-4">
