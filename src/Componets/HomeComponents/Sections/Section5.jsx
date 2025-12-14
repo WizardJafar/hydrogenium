@@ -1,7 +1,11 @@
 import { useState } from 'react';
+import { toast } from 'react-toastify';
 
 export default function Section5() {
   const [selectedItem, setSelectedItem] = useState(null);
+  const [questionModalOpen, setQuestionModalOpen] = useState(false);
+  const [name, setName] = useState("");
+  const [message, setMessage] = useState("");
 
   const items = [
     {
@@ -174,6 +178,27 @@ Vodorod terapiyasi 2-tur qandli diabet va u bilan bog‘liq holatlarni davolashd
 Uning samaradorligi, universalligi va xavfsizligi ushbu usulni nihoyatda istiqbolli qiladi hamda bemorlar uchun kasallikni nazorat qilish va hayot sifatini yaxshilash borasida yangi imkoniyatlarni ochadi. Ushbu afzalliklarni inobatga olgan holda, vodorod terapiyasi sog‘liqni samarali boshqarishga intilayotgan bemorlar va tibbiyot hamjamiyati tomonidan alohida e’tiborga loyiqdir.`
     },
   ];
+  const sendToTelegram = async () => {
+    if (!name || !message) return alert("Iltimos, barcha maydonlarni to‘ldiring.");
+    const botToken = "8559354625:AAFOExAj1BTe2tR2A4O8r_htOMl0ATtPk60";
+    const chatId = "-5083792285";
+    const text = `Yangi savol:\nIsm: ${name}\nSavol: ${message}`;
+
+    try {
+      await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ chat_id: chatId, text }),
+      });
+      toast.success("Savol yuborildi!");
+      setName("");
+      setMessage("");
+      setQuestionModalOpen(false);
+    } catch (err) {
+      console.error(err);
+      toast.error("Xatolik yuz berdi, qayta urinib ko‘ring.");
+    }
+  };
 
   return (
     <>
@@ -195,9 +220,7 @@ Uning samaradorligi, universalligi va xavfsizligi ushbu usulni nihoyatda istiqbo
                 <div className="absolute inset-0 bg-gradient-to-br from-[#2d3748] to-[#1a202c] transition-all duration-500" />
 
                 <div className="relative h-full p-6 sm:p-8 flex flex-col text-white">
-                  <h3 className="text-xl sm:text-2xl font-bold mb-3">
-                    {item.title}
-                  </h3>
+                  <h3 className="text-xl sm:text-2xl font-bold mb-3">{item.title}</h3>
 
                   <div className="overflow-hidden">
                     <div className="transform translate-y-0 lg:translate-y-full lg:group-hover:translate-y-0 transition-transform duration-700 ease-out h-full">
@@ -233,23 +256,28 @@ Uning samaradorligi, universalligi va xavfsizligi ushbu usulni nihoyatda istiqbo
               </div>
             ))}
           </div>
+
+          {/* Кнопка "Задать вопрос" */}
+          <div className="text-center mt-12">
+            <button
+              onClick={() => setQuestionModalOpen(true)}
+              className="btn bg-gradient-to-r from-[#4a86ad] to-[#2d3748] text-white px-6 py-3 rounded-full hover:shadow-lg"
+            >
+              Savol berish
+            </button>
+          </div>
         </div>
       </section>
 
-      {/* DaisyUI Modal */}
+      {/* Modal для карточки */}
       {selectedItem && (
         <>
           <input type="checkbox" checked={true} readOnly className="modal-toggle" />
           <div className="modal modal-open border-none">
-            <div className="modal-box max-w-4xl w-full p-0 relativer rounded-2xl">
-              {/* Header */}
-              <div className="bg-gradient-to-r from-[#4a86ad] to-[#2d3748] p-6 sm:p-8 text-white rounded-t-2xl">
-                <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold pr-8">
-                  {selectedItem.title}
-                </h3>
-                <p className="text-white/80 text-sm sm:text-base mt-2">
-                  {selectedItem.description}
-                </p>
+            <div className="modal-box max-w-4xl w-full p-0 relative rounded-2xl">
+              <div className="bg-gradient-to-r from-[#4a86ad] to-[#2d3748] p-6 sm:p-8 text-white rounded-t-2xl relative">
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold pr-8">{selectedItem.title}</h3>
+                <p className="text-white/80 text-sm sm:text-base mt-2">{selectedItem.description}</p>
                 <button
                   onClick={() => setSelectedItem(null)}
                   className="btn btn-sm btn-circle btn-ghost absolute right-4 top-4 text-white hover:bg-white/20"
@@ -257,30 +285,63 @@ Uning samaradorligi, universalligi va xavfsizligi ushbu usulni nihoyatda istiqbo
                   ✕
                 </button>
               </div>
-
-              {/* Content */}
               <div className="p-6 sm:p-8 max-h-[60vh] overflow-y-auto">
                 <div className="text-gray-700 leading-relaxed whitespace-pre-line text-base sm:text-lg">
                   {selectedItem.fullText || "Ma'lumot yuklanmoqda..."}
                 </div>
               </div>
+              <div className=" bg-gray-50 p-4 sm:p-6 border-t border-gray-200 rounded-b-2xl m-0 flex justify-between gap-4">
+                {/* Кнопка "Задать вопрос" */}
+                
+                  <button
+                    onClick={() => setQuestionModalOpen(true)}
+                    className="btn w-[50%] bg-gradient-to-r from-[#4a86ad] to-[#2d3748] text-white border-none hover:shadow-lg"
+                  >
+                    Savol berish
+                  </button>
 
-              {/* Footer */}
-              <div className="modal-action bg-gray-50 p-4 sm:p-6 border-t border-gray-200 rounded-b-2xl m-0">
+
                 <button
                   onClick={() => setSelectedItem(null)}
-                  className="btn w-full bg-gradient-to-r from-[#4a86ad] to-[#2d3748] text-white border-none hover:shadow-lg"
+                  className="btn btn-error w-[50%]    text-white border-none hover:shadow-lg"
                 >
                   Yopish
                 </button>
               </div>
             </div>
-            <div className="modal-backdrop" onClick={() => setSelectedItem(null)}>
-              <button>close</button>
-            </div>
+            <div className="modal-backdrop" onClick={() => setSelectedItem(null)} />
           </div>
         </>
       )}
+
+      {/* Modal для вопроса */}
+      {questionModalOpen && (
+        <div className="modal modal-open">
+          <div className="modal-box max-w-lg relative p-6 rounded-2xl">
+            <h3 className="text-2xl font-bold mb-4">Savol yuborish</h3>
+            <input
+              type="text"
+              placeholder="Ismingiz"
+              className="input input-bordered w-full mb-4"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+            <textarea
+              placeholder="Savolingiz..."
+              className="textarea textarea-bordered w-full mb-4"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              rows={4}
+            />
+            <div className="flex justify-end gap-2">
+              <button onClick={() => setQuestionModalOpen(false)} className="btn btn-ghost">Bekor qilish</button>
+              <button onClick={sendToTelegram} className="btn bg-gradient-to-r from-[#4a86ad] to-[#2d3748] text-white border-none">Yuborish</button>
+            </div>
+          </div>
+          <div className="modal-backdrop" onClick={() => setQuestionModalOpen(false)} />
+        </div>
+      )}
     </>
   );
+
 }
