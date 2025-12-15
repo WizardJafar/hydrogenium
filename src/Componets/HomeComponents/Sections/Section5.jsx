@@ -13,36 +13,33 @@ export default function Section5() {
       description:
         "Vodorod terapiyasi ushbu muammoni hal etishda innovatsion va samarali yechim bo'lib, organizmga uch tomonlama, kompleks ta'sir ko'rsatadi.",
       hasLink: true,
-      fullText: `Vodorod terapiyasi — uzoq umr va yoshlikni saqlab qolish yo‘lidagi ishonchli kalitingiz.
-Qarish va yoshga bog‘liq kasalliklarning, jumladan onkologik kasalliklar, aqliy va jismoniy faollikning pasayishining asosiy omillaridan biri oksidativ stress hisoblanadi. Ushbu jarayon davomida erkin radikallar hujayralarimizdagi DNK, lipidlar va oqsillarga zarar yetkazadi.
+      fullText: `Vodorod terapiyasi — uzoq umr va yoshlikni saqlab qolish kalitingiz.
+Qarish va yoshga bog‘liq kasalliklarning, jumladan onkologik kasalliklar, aqliy va jismoniy faollikning pasayishining asosiy sababi oksidativ stress hisoblanadi. Ushbu jarayonda erkin radikallar hujayralarimizdagi DNK, lipidlar va oqsillarga zarar yetkazadi.
 
-Vodorod terapiyasi ushbu muammoni hal etishda innovatsion va samarali yechim bo‘lib, organizmga uch tomonlama ta’sir ko‘rsatadi:
+Vodorod terapiyasi ushbu muammoga innovatsion va samarali yechim taklif etadi hamda organizmga uch tomonlama ta’sir ko‘rsatadi:
 
-Erkin radikallarni neytrallash:
-Vodorod erkin radikallar bilan tezda bog‘lanib, hujayra va organlarning shikastlanishining oldini oladi.
+Erkin radikallarni neytrallash
+Vodorod erkin radikallar bilan tezda bog‘lanib, hujayralar va organlarning shikastlanishining oldini oladi.
 
-Himoya mexanizmlarini faollashtirish:
-Vodorod organizmning himoya tizimlari faoliyatini rag‘batlantirib, uni turli kasalliklar va salbiy tashqi omillarga nisbatan yanada bardoshli qiladi.
+Himoya mexanizmlarini faollashtirish
+Vodorod organizmning ichki himoya tizimlari faoliyatini rag‘batlantirib, turli kasalliklar va salbiy tashqi omillarga nisbatan bardoshliligini oshiradi.
 
-Oksidlangan oqsillar va lipidlarni tiklash:
-Vodorod oksidativ stress ta’sirida zararlangan hujayra tuzilmalarini qayta tiklash qobiliyatiga ega bo‘lib, ularning dastlabki funksional holatini tiklashga yordam beradi.
+Oksidlangan oqsillar va lipidlarni tiklash
+Vodorod oksidativ stress ta’sirida shikastlangan hujayra tuzilmalarini tiklash qobiliyatiga ega bo‘lib, ularning dastlabki funksional holatini qayta tiklaydi.
 
-Vodorodli suvni muntazam iste’mol qilish — organizmni vodorod bilan to‘yintirishning oddiy va qulay usulidir.
-Ushbu noyob usul hayot tarzini tubdan o‘zgartirishni yoki katta sa’y-harakatlarni talab qilmaydi. Soddaligiga qaramay, hatto kichik miqdordagi vodorodning ijobiy ta’siri ilmiy jihatdan isbotlangan va ko‘p yillik tadqiqotlar bilan tasdiqlangan.
+Vodorodli suvni muntazam iste’mol qilish — organizmni vodorod bilan to‘yintirishning oddiy va qulay usulidir. Ushbu noyob usul hayot tarzini keskin o‘zgartirish yoki katta sa’y-harakatlarni talab qilmaydi. Soddaligiga qaramay, hatto kichik miqdordagi vodorodning ham ijobiy ta’siri ilmiy jihatdan isbotlangan va ko‘p yillik tadqiqotlar bilan tasdiqlangan.
 
 Hydrogenium kompaniyasi vodorod terapiyasi sohasida inqilobiy yechimlarni taklif etadi.
-Bizning yuqori oqimli inhalatsion qurilmalarimiz vodorodning barcha ijobiy ta’sirlarini allaqachon birinchi muolajadan so‘ng his qilish imkonini beradi. Umumiy holatning yaxshilanishi, energiya va ish faoliyatining oshishi, qarish jarayonlarining sekinlashuvi hamda immunitetning mustahkamlanishi — bularning barchasi Hydrogenium’ning zamonaviy vodorod terapiyasi texnologiyalari orqali amalga oshadi.
+Bizning yuqori oqimli ingalyatsion apparatlarimiz vodorodning barcha ijobiy ta’sirlarini allaqachon birinchi muolajadan so‘ng his qilish imkonini beradi. Umumiy holatning yaxshilanishi, energiya va ishchanlikning oshishi, qarish jarayonlarining sekinlashuvi va immunitetning mustahkamlanishi — bularning barchasi Hydrogenium’ning ilg‘or vodorod texnologiyalari tufayli amalga oshadi.
 
-Vodorod terapiyasini tanlash — bu sog‘lig‘ingiz, go‘zalligingiz va uzoq umr ko‘rishingizga qaratilgan sarmoyadir.
-Hydrogenium bilan birga kelajakni a’lo jismoniy va ruhiy holatda qarshi olishga o‘zingizga imkon bering.`
+Vodorod terapiyasini tanlash — bu sog‘lig‘ingiz, go‘zalligingiz va uzoq umr ko‘rishingizga kiritilgan sarmoyadir. Hydrogenium bilan birga kelajakni mukammal jismoniy va ruhiy holatda qarshi oling.`
     },
     {
       title: "Sport",
       description:
         "Mashg'ulotlar orasida yoki jismoniy mashqlarni bajarish jarayonida vodorod terapiyasini qo'llash sportchi organizmining holati va tiklanishiga sezilarli ijobiy ta'sir ko'rsatadi.",
       hasLink: true,
-      fullText: `Vodorod terapiyasi sport natijalarini oshirish va tiklanish jarayonini tezlashtirishda muhim rol o‘ynaydi.
-Sport — bu nafaqat muvaffaqiyat va shaxsiy rivojlanish yo‘li, balki organizm uchun jiddiy sinov hamdir. Har bir mashg‘ulot, ayniqsa yuqori darajadagi tayyorgarlik jarayonlari, mitoxondriyalarda erkin radikallarning ortiqcha hosil bo‘lishi bilan bog‘liq bo‘lgan oksidativ stress bilan kechadi. Ushbu jarayonlar aerob unumdorlikning pasayishiga, mashg‘ulotlar orasidagi tiklanish vaqtining uzayishiga va oxir-oqibat jarohatlar xavfining oshishiga olib kelishi mumkin.
+      fullText: `Sport — bu nafaqat muvaffaqiyat va shaxsiy rivojlanish yo‘li, balki organizm uchun jiddiy sinov hamdir. Har bir mashg‘ulot, ayniqsa yuqori darajadagi tayyorgarlik jarayonlari, mitoxondriyalarda erkin radikallarning ortiqcha hosil bo‘lishi bilan bog‘liq bo‘lgan oksidativ stress bilan kechadi. Ushbu jarayonlar aerob unumdorlikning pasayishiga, mashg‘ulotlar orasidagi tiklanish vaqtining uzayishiga va oxir-oqibat jarohatlar xavfining oshishiga olib kelishi mumkin.
 
 Vodorod terapiyasi ushbu muammoni hal etish uchun kuchli yechimni taklif etadi.
 Ilmiy asoslariga chuqurroq nazar tashlaydigan bo‘lsak, intensiv jismoniy yuklamalar vaqtida laktat konsentratsiyasi ortadi, bu esa charchoqqa va organizmning uzoq tiklanish davriga ehtiyoj sezishiga sabab bo‘ladi. Vodorod biologik faol modda sifatida laktatning tezroq bartaraf etilishiga yordam beradi, natijada sportchining tiklanish va yangi yuklamalarga tayyorgarlik ko‘rish uchun zarur bo‘lgan vaqti sezilarli darajada qisqaradi.
@@ -57,22 +54,6 @@ Bu nafaqat oksidativ stressga qarshi kurashish va tiklanishni tezlashtirishning 
       title: "Kardiologiya",
       description:
         "Tadqiqotlar shuni ko'rsatadiki, vodorod yurak-qon tomir tizimining faoliyati bilan bog'liq ko'plab muhim jarayonlarga ta'sir ko'rsatish qobiliyatiga ega.",
-      hasLink: true,
-      fullText: `Sport — bu nafaqat muvaffaqiyat va shaxsiy rivojlanish yo‘li, balki organizm uchun jiddiy sinov hamdir. Har bir mashg‘ulot, ayniqsa yuqori darajadagi tayyorgarlik jarayonlari, mitoxondriyalarda erkin radikallarning ortiqcha hosil bo‘lishi bilan bog‘liq bo‘lgan oksidativ stress bilan kechadi. Ushbu jarayonlar aerob unumdorlikning pasayishiga, mashg‘ulotlar orasidagi tiklanish vaqtining uzayishiga va oxir-oqibat jarohatlar xavfining oshishiga olib kelishi mumkin.
-
-Vodorod terapiyasi ushbu muammoni hal etish uchun kuchli yechimni taklif etadi.
-Ilmiy asoslariga chuqurroq nazar tashlaydigan bo‘lsak, intensiv jismoniy yuklamalar vaqtida laktat konsentratsiyasi ortadi, bu esa charchoqqa va organizmning uzoq tiklanish davriga ehtiyoj sezishiga sabab bo‘ladi. Vodorod biologik faol modda sifatida laktatning tezroq bartaraf etilishiga yordam beradi, natijada sportchining tiklanish va yangi yuklamalarga tayyorgarlik ko‘rish uchun zarur bo‘lgan vaqti sezilarli darajada qisqaradi.
-
-Mashg‘ulotlar orasida yoki bevosita jismoniy mashqlar jarayonida vodorod terapiyasini qo‘llash sportchi organizmiga sezilarli ijobiy ta’sir ko‘rsatadi.
-U aerob unumdorlikni oshirishga yordam beradi, shu orqali aerob imkoniyatlarni kengaytiradi va energiyaning anaerob ishlab chiqarilish bosqichini kechiktiradi. Bu esa yuklamalar soni va intensivligini oshirmasdan turib sport natijalarini yaxshilashda muhim omil hisoblanadi.
-
-Vodorod terapiyasini sport mashg‘ulotlari va tiklanish amaliyotiga joriy etish sportchilar uchun yangi imkoniyatlarni ochib beradi.
-Bu nafaqat oksidativ stressga qarshi kurashish va tiklanishni tezlashtirishning innovatsion usuli, balki jarohatlar xavfini oshirmagan holda ilgari erishib bo‘lmaydigan natijalarga erishish imkoniyatidir. Sportchilar yuqori unumdorlik va samaradorlikni uzoq vaqt davomida saqlab qolishlari, professional faoliyat muddatini uzaytirishlari va organizm salomatligi hamda uzoq umr ko‘rishga urg‘u bergan holda sport yutuqlarining yangi bosqichiga chiqishlari mumkin.`
-    },
-    {
-      title: "Pulmonologiya",
-      description:
-        "Ushbu terapiya usulini qo'llash nafaqat o'pkaning funksional ko'rsatkichlarini yaxshilaydi, balki bemorlarning hayot sifatini sezilarli darajada oshiradi.",
       hasLink: true,
       fullText: `Bugungi kunda kardiologiya innovatsion texnologiyalar va davolash usullari tibbiyot oldida yangi ufqlarni ochayotgan yangi davrga qadam qo‘ymoqda.
 Ushbu sohadagi eng muhim yo‘nalishlardan biri vodorod terapiyasini qo‘llash hisoblanadi. Mazkur usul molekulyar vodoroddan foydalanishga asoslangan bo‘lib, u turli yurak-qon tomir kasalliklarini davolashda katta salohiyatni namoyon etmoqda.
@@ -102,9 +83,9 @@ Xulosa qilib aytganda, vodorod terapiyasi yurak-qon tomir kasalliklarining oldin
 U yurak va qon tomirlar faoliyatini yaxshilashga qaratilgan kompleks yondashuvni taklif etadi. O‘ziga xos xususiyatlari va ko‘plab ijobiy ta’sirlari tufayli vodorod butun dunyo kardiologlari uchun kuchli va istiqbolli vositaga aylanishi mumkin.`
     },
     {
-      title: "Nevrologiya",
+      title: "Pulmonologiya",
       description:
-        "Erkin radikallarni neytrallash orqali vodorod terapiyasi oqsillarning glikatsiyasi va shikastlanishiga olib keluvchi reaksiyalar zanjirini oldini olish bilan cheklanib qolmay, balki allaqachon oksidlangan oqsillarning tiklanishiga ham yordam beradi.",
+        "Ushbu terapiya usulini qo'llash nafaqat o'pkaning funksional ko'rsatkichlarini yaxshilaydi, balki bemorlarning hayot sifatini sezilarli darajada oshiradi.",
       hasLink: true,
       fullText: `So‘nggi yillarda vodorod terapiyasini keng ko‘lamdagi pulmonologik kasalliklarni davolashda qo‘llash faol rivojlanmoqda.
 Buning asosiy sababi shundaki, oksidativ stress ko‘plab respirator buzilishlarning patogenezida muhim rol o‘ynaydi. Bularga postkovid reabilitatsiyasi, surunkali obstruktiv o‘pka kasalligi (SO‘OK, XOBL) va bronxial astma kabi jiddiy holatlar kiradi. Kuchli antioksidant xususiyatlarga ega va biologik membranalar orqali oson o‘ta oladigan vodorod ushbu kasalliklarga qarshi kurashda innovatsion va samarali vosita hisoblanadi.
@@ -132,50 +113,58 @@ Xulosa qilib aytganda, vodorod terapiyasi o‘pka kasalliklarini davolashda yang
 U oksidativ stress va yallig‘lanishning fundamental mexanizmlariga yo‘naltirilgan bo‘lib, SO‘OK, bronxial astma va COVID-19 oqibatlaridan aziyat chekayotgan bemorlarni davolashda kompleks yondashuvning muhim vositasiga aylanmoqda.`
     },
     {
+      title: "Nevrologiya",
+      description:
+        "Erkin radikallarni neytrallash orqali vodorod terapiyasi oqsillarning glikatsiyasi va shikastlanishiga olib keluvchi reaksiyalar zanjirini oldini olish bilan cheklanib qolmay, balki allaqachon oksidlangan oqsillarning tiklanishiga ham yordam beradi.",
+      hasLink: true,
+      fullText:  `So‘nggi yillarda ilmiy hamjamiyat nevrologik kasalliklarni davolashning innovatsion usullariga tobora ko‘proq e’tibor qaratmoqda. Eng istiqbolli yo‘nalishlardan biri vodorod terapiyasi bo‘lib, u Parkinson va Altsgeymer kasalliklari, shuningdek turli xil demensiya shakllari bilan bog‘liq jarayonlarni nafaqat sekinlashtirish, balki ularni orqaga qaytarish imkoniyatlarini ham ochib bermoqda.
+
+Tadqiqotlar shuni ko‘rsatadiki, ko‘plab nevrologik kasalliklar asosan oksidativ stress natijasida yuzaga keladigan oqsillar glikatsiyasi bilan bog‘liq. Kislorod va azotning faol shakllari hujayra tuzilmalariga zarar yetkazishi oqibatida nerv hujayralarining normal faoliyati buziladi va bu yuqorida qayd etilgan kasalliklarning rivojlanishiga olib keladi. Erkin radikallar ortiqligi sababli yuzaga keladigan oksidativ stress miya hujayralarining qarishi va degeneratsiyasida asosiy rol o‘ynaydi.
+
+Shu nuqtai nazardan vodorod noyob yechim hisoblanadi. Molekulyar jihatdan juda kichik bo‘lgani sababli vodorod gematoensefalik to‘siqdan oson o‘ta oladi, miya hujayralarigacha yetib boradi va ularni oksidativ stressdan himoya qiladi. Erkin radikallarni neytrallash orqali vodorod terapiyasi glikatsiya va oqsillarning shikastlanishiga olib keluvchi reaksiyalar zanjirini oldini olish bilan birga, allaqachon oksidlangan oqsillarning tiklanishiga ham yordam beradi va shu tariqa hujayra darajasida terapevtik ta’sir ko‘rsatadi.
+
+Nevrologiya sohasida vodorod terapiyasining afzalliklari quyidagilardan iborat:
+
+Nevrologik simptomlarning kamayishi, bu bemorlarning hayot sifatini sezilarli darajada yaxshilaydi.
+
+Kognitiv funksiyalar va xotiraning yaxshilanishi, bu demensiya va boshqa neyrodegenerativ kasalliklarni davolashda nihoyatda muhimdir.
+
+Miya qon aylanishining yaxshilanishi va miya qon oqimining optimal qayta taqsimlanishi, bu miyaning umumiy samaradorligini oshiradi.
+
+Miyaning vaskulyarizatsiyasini kuchaytirish va neoangiogenezni rag‘batlantirish, bu ishemiya o‘choqlarining qayta qon bilan ta’minlanishiga yordam berishi mumkin.
+
+Hydrogenium kompaniyasining vodorodi nevrologik kasalliklarni davolashda kompleks yondashuv uchun yuqori samarali va patogenetik jihatdan asoslangan vosita hisoblanadi.
+
+Uning qo‘llanilishi miya degenerativ kasalliklarini davolashga bo‘lgan yondashuvni tubdan o‘zgartirishi, bemorlarga nafaqat kasalliklarning rivojlanishini sekinlashtirish umidini, balki ularni orqaga qaytarish bo‘yicha real imkoniyatlarni ham taqdim etishi mumkin.
+
+Yodda tuting: miya salomatligiga g‘amxo‘rlik bugundan boshlanadi. Vodorod terapiyasi sog‘lig‘ingizni tiklash va mustahkamlashning kaliti bo‘lishi mumkin. Hydrogenium mahsulotlarini tanlang — salomatlikni tanlang!`
+    },
+    {
       title: "Endokrinologiya",
       description:
         "Mazkur usul molekulyar vodorodning antioksidant xususiyatlariga asoslangan bo'lib, u erkin radikallarni zararsizlantirish, organizmdagi oksidativ stress va yallig'lanish jarayonlarini kamaytirish qobiliyatiga ega.",
       hasLink: true,
-      fullText: `So‘nggi yillarda tibbiyot fani metabolik buzilishlar bilan bog‘liq kasalliklarni, jumladan 2-tur qandli diabetni tushunish va davolash borasida sezilarli darajada rivojlandi.
-Ushbu yo‘nalishdagi innovatsion va istiqbolli usullardan biri — vodorod terapiyasidir. Mazkur yondashuv metabolik sindrom va insulinrezistentlikni davolashda yangi imkoniyatlarni ochib, ushbu holatlarni tuzatishga qaratilgan yagona apparatli va patogenetik jihatdan asoslangan usul sifatida namoyon bo‘lmoqda.
+      fullText: `So‘nggi yillarda ilmiy hamjamiyat nevrologik kasalliklarni davolashning innovatsion usullariga tobora ko‘proq e’tibor qaratmoqda. Eng istiqbolli yo‘nalishlardan biri vodorod terapiyasi bo‘lib, u Parkinson va Altsgeymer kasalliklari, shuningdek turli xil demensiya shakllari bilan bog‘liq jarayonlarni nafaqat sekinlashtirish, balki ularni orqaga qaytarish imkoniyatlarini ham ochib bermoqda.
 
-Terapiyaning mohiyati
+Tadqiqotlar shuni ko‘rsatadiki, ko‘plab nevrologik kasalliklar asosan oksidativ stress natijasida yuzaga keladigan oqsillar glikatsiyasi bilan bog‘liq. Kislorod va azotning faol shakllari hujayra tuzilmalariga zarar yetkazishi oqibatida nerv hujayralarining normal faoliyati buziladi va bu yuqorida qayd etilgan kasalliklarning rivojlanishiga olib keladi. Erkin radikallar ortiqligi sababli yuzaga keladigan oksidativ stress miya hujayralarining qarishi va degeneratsiyasida asosiy rol o‘ynaydi.
 
-Vodorod terapiyasi molekulyar vodorodni inhalatsiya qilish yoki vodorodli suvni iste’mol qilish orqali amalga oshiriladi. Ushbu usul molekulyar vodorodning antioksidant xususiyatlariga asoslanib, u erkin radikallarni neytrallash, organizmdagi oksidativ stress va yallig‘lanishni kamaytirish qobiliyatiga ega. Aynan shu mexanizmlar 2-tur qandli diabet asoratlarining rivojlanishida muhim rol o‘ynaydi.
+Shu nuqtai nazardan vodorod noyob yechim hisoblanadi. Molekulyar jihatdan juda kichik bo‘lgani sababli vodorod gematoensefalik to‘siqdan oson o‘ta oladi, miya hujayralarigacha yetib boradi va ularni oksidativ stressdan himoya qiladi. Erkin radikallarni neytrallash orqali vodorod terapiyasi glikatsiya va oqsillarning shikastlanishiga olib keluvchi reaksiyalar zanjirini oldini olish bilan birga, allaqachon oksidlangan oqsillarning tiklanishiga ham yordam beradi va shu tariqa hujayra darajasida terapevtik ta’sir ko‘rsatadi.
 
-2-tur qandli diabet bilan og‘rigan bemorlar uchun afzalliklar
+Nevrologiya sohasida vodorod terapiyasining afzalliklari quyidagilardan iborat:
 
-Retina angiopatiyasi:
-Vodorod oksidativ stressni kamaytirib, diabetning eng jiddiy asoratlaridan biri bo‘lgan retina angiopatiyasining rivojlanishi va progres-siyasini sekinlashtiradi.
+Nevrologik simptomlarning kamayishi, bu bemorlarning hayot sifatini sezilarli darajada yaxshilaydi.
 
-Nefropatiya:
-Oksidativ stressning kamayishi buyrak to‘qimalarining shikastlanishini sekinlashtiradi va diabetik nefropatiyaning oldini olishga yordam beradi.
+Kognitiv funksiyalar va xotiraning yaxshilanishi, bu demensiya va boshqa neyrodegenerativ kasalliklarni davolashda nihoyatda muhimdir.
 
-Diabetik oyoq:
-Qon ta’minotini yaxshilash va yallig‘lanishni kamaytirish orqali vodorod terapiyasi trofik yaralarning bitishiga yordam beradi hamda infeksiyalar rivojlanishining oldini oladi.
+Miya qon aylanishining yaxshilanishi va miya qon oqimining optimal qayta taqsimlanishi, bu miyaning umumiy samaradorligini oshiradi.
 
-Insulinrezistentlik va giperinsulinemiya:
-Vodorod hujayralarning insulinga sezuvchanligini oshirib, qondagi glyukoza darajasining me’yorlashuviga yordam beradi.
+Miyaning vaskulyarizatsiyasini kuchaytirish va neoangiogenezni rag‘batlantirish, bu ishemiya o‘choqlarining qayta qon bilan ta’minlanishiga yordam berishi mumkin.
 
-Giperglikemiya:
-Oksidativ stressni boshqarish qondagi glyukoza miqdoriga bevosita ta’sir ko‘rsatib, giperglikemiyani nazorat qilishga yordam beradi.
+Hydrogenium kompaniyasining vodorodi nevrologik kasalliklarni davolashda kompleks yondashuv uchun yuqori samarali va patogenetik jihatdan asoslangan vosita hisoblanadi.
 
-Ortiqcha vazn, gipertrigliseridemiya:
-Metabolizmning yaxshilanishi, oksidativ stressning kamayishi va yallig‘lanish jarayonlarining susayishi tana vazni va qondagi triglitseridlar darajasini tuzatishga xizmat qiladi.
+Uning qo‘llanilishi miya degenerativ kasalliklarini davolashga bo‘lgan yondashuvni tubdan o‘zgartirishi, bemorlarga nafaqat kasalliklarning rivojlanishini sekinlashtirish umidini, balki ularni orqaga qaytarish bo‘yicha real imkoniyatlarni ham taqdim etishi mumkin.
 
-Vodorod terapiyasining qo‘shimcha foydalari
-
-Umumiy holatning yaxshilanishi:
-Bemorlar energiya darajasining oshishi va kayfiyatning yaxshilanishini qayd etadilar, bu esa davolash jarayonida faol ishtirok etishga va hayot sifatining oshishiga yordam beradi.
-
-Asoratlarning oldini olish:
-Vodorod terapiyasini muntazam qo‘llash qandli diabet asoratlarining rivojlanish xavfini kamaytirib, kelajakda intensiv va qimmat davolash zaruratini pasaytiradi.
-
-Universallik va xavfsizlik:
-Mazkur davolash usuli deyarli barcha bemorlar uchun mos bo‘lib, allergiyasi yoki ayrim dori vositalariga qarshi ko‘rsatmalari bo‘lgan bemorlar uchun ham xavfsiz hisoblanadi.
-
-Vodorod terapiyasi 2-tur qandli diabet va u bilan bog‘liq holatlarni davolashda inqilobiy yo‘nalishlardan biri hisoblanadi.
-Uning samaradorligi, universalligi va xavfsizligi ushbu usulni nihoyatda istiqbolli qiladi hamda bemorlar uchun kasallikni nazorat qilish va hayot sifatini yaxshilash borasida yangi imkoniyatlarni ochadi. Ushbu afzalliklarni inobatga olgan holda, vodorod terapiyasi sog‘liqni samarali boshqarishga intilayotgan bemorlar va tibbiyot hamjamiyati tomonidan alohida e’tiborga loyiqdir.`
+Yodda tuting: miya salomatligiga g‘amxo‘rlik bugundan boshlanadi. Vodorod terapiyasi sog‘lig‘ingizni tiklash va mustahkamlashning kaliti bo‘lishi mumkin. Hydrogenium mahsulotlarini tanlang — salomatlikni tanlang!`
     },
   ];
   const sendToTelegram = async () => {
@@ -257,7 +246,7 @@ Uning samaradorligi, universalligi va xavfsizligi ushbu usulni nihoyatda istiqbo
             ))}
           </div>
 
-          
+
         </div>
       </section>
 
@@ -284,13 +273,13 @@ Uning samaradorligi, universalligi va xavfsizligi ushbu usulni nihoyatda istiqbo
               </div>
               <div className=" bg-gray-50 p-4 sm:p-6 border-t border-gray-200 rounded-b-2xl m-0 flex justify-between gap-4">
                 {/* Кнопка "Задать вопрос" */}
-                
-                  <button
-                    onClick={() => setQuestionModalOpen(true)}
-                    className="btn w-[50%] bg-gradient-to-r from-[#4a86ad] to-[#2d3748] text-white border-none hover:shadow-lg"
-                  >
-                    Savol berish
-                  </button>
+
+                <button
+                  onClick={() => setQuestionModalOpen(true)}
+                  className="btn w-[50%] bg-gradient-to-r from-[#4a86ad] to-[#2d3748] text-white border-none hover:shadow-lg"
+                >
+                  Savol berish
+                </button>
 
 
                 <button
