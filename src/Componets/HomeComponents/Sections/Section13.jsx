@@ -6,6 +6,7 @@ export function Section13() {
                     {/* Katta logotip */}
                     <div className="flex justify-center lg:justify-start">
                         <img
+                            loading="lazy"
                             src="https://static.tildacdn.com/tild6335-6461-4637-a462-626463656261/photo.svg"
                             alt="Hydrogenium"
                             className="w-full max-w-sm lg:max-w-md xl:max-w-lg h-auto object-contain drop-shadow-2xl"

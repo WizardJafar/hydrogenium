@@ -211,7 +211,8 @@ export default function Section6() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100">
       <section className="py-20 px-6" id="catalog">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-[1600px] mx-auto">
+
           {/* Header */}
           <div className="text-center mb-16">
             <div className="inline-block mb-4">
@@ -219,58 +220,75 @@ export default function Section6() {
                 Mahsulotlar
               </span>
             </div>
+
             <h2 className="text-4xl sm:text-5xl font-bold mb-4 bg-gradient-to-r from-[#4a86ad] to-[#5a96bd] bg-clip-text text-transparent">
               Vodorod uskunalari katalogi
             </h2>
-            <p className="text-gray-600 text-base sm:text-lg max-w-2xl mx-auto">
+
+            <p className="text-gray-600 text-base sm:text-lg max-w-3xl mx-auto">
               Zamonaviy texnologiyalar asosida ishlab chiqarilgan yuqori sifatli mahsulotlar
             </p>
           </div>
 
           {/* Products Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {products.map((product) => (
               <div
                 key={product.id}
                 className="group bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden flex flex-col"
               >
-                {/* Image Container */}
-                <div className="relative h-64 sm:h-72 md:h-80 bg-gradient-to-br from-blue-50 to-slate-100 overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-t from-white/50 to-transparent z-10"></div>
+
+                {/* Image */}
+                <div className="relative h-[360px] sm:h-[420px] lg:h-[480px] overflow-hidden bg-slate-100">
                   <img
+                    loading="lazy"
                     src={product.image}
                     alt={product.title}
-                    className="w-full  object-coverv bg-center group-hover:scale-110 transition-transform duration-700"
+                    className="w-full h-full object-cover bg-center group-hover:scale-110 transition-transform duration-700"
                   />
+
+                  {/* Gradient overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-white/70 to-transparent" />
                 </div>
 
                 {/* Content */}
-                <div className="p-6 sm:p-8 flex-1 flex flex-col justify-between">
-                  <div className="mb-4 sm:mb-6">
-                    <h3 className="text-xl sm:text-2xl font-bold text-gray-800 mb-1">{product.title}</h3>
-                    <p className="text-[#4a86ad] text-sm sm:text-base font-medium tracking-wide uppercase">{product.subtitle}</p>
+                <div className="p-8 flex-1 flex flex-col justify-between">
+                  <div className="mb-6">
+                    <h3 className="text-2xl font-bold text-gray-800 mb-1">
+                      {product.title}
+                    </h3>
+                    <p className="text-[#4a86ad] text-sm font-medium tracking-wide uppercase">
+                      {product.subtitle}
+                    </p>
                   </div>
 
                   {/* Buttons */}
-                  <div className="flex flex-col sm:flex-row gap-3 mt-auto">
+                  <div className="flex flex-col sm:flex-row gap-4 mt-auto">
                     <button
-                      className="flex-1 px-4 py-3 sm:py-4 rounded-xl text-white text-sm sm:text-base font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/50 active:scale-95 bg-gradient-to-r from-[#4a86ad] to-[#5a96bd]"
+                      className="flex-1 px-4 py-4 rounded-xl text-white text-base font-semibold
+                transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/40
+                active:scale-95 bg-gradient-to-r from-[#4a86ad] to-[#5a96bd]"
                       onClick={() => setSelectedProduct(product)}
                     >
                       TAVSIF
                     </button>
 
                     <button
-                      className="flex-1 px-4 py-3 sm:py-4 rounded-xl text-sm sm:text-base font-semibold border-2 border-[#4a86ad] text-[#4a86ad] transition-all duration-300 hover:bg-[#4a86ad] hover:text-white hover:shadow-lg hover:shadow-blue-500/30 active:scale-95"
+                      className="flex-1 px-4 py-4 rounded-xl text-base font-semibold
+                border-2 border-[#4a86ad] text-[#4a86ad]
+                transition-all duration-300 hover:bg-[#4a86ad] hover:text-white
+                hover:shadow-lg hover:shadow-blue-500/30 active:scale-95"
                       onClick={() => setOrderProduct(product)}
                     >
                       BUYURTMA
                     </button>
                   </div>
                 </div>
+
               </div>
             ))}
           </div>
+
         </div>
       </section>
 

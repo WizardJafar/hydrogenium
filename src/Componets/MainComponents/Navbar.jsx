@@ -26,14 +26,14 @@ export default function Navbar() {
   };
 
   return (
-    <div className="w-full">
+    <div className="w-full" id="home">
 
       {/* ================= NAVBAR ================= */}
-      <header className="bg-white/10 w-full flex items-center justify-between py-3 sm:py-5 px-4 sm:px-6 lg:px-10 backdrop-blur-md fixed top-0 left-0 z-50">
+      <header className="bg-white/10 w-full flex items-center justify-between py-3 sm:py-5 px-4 sm:px-6 lg:px-10 backdrop-blur-md fixed top-0 left-0 z-50" >
 
         {/* Logo */}
         <div className="flex items-center gap-3">
-          <img src={logo} alt="Logo" className="w-12 h-12 md:w-16 md:h-16 object-contain rounded-lg" />
+          <img loading="lazy" src={logo} alt="Logo" className="w-12 h-12 md:w-16 md:h-16 object-contain rounded-lg" />
           <div>
             <p className="text-lg md:text-xl font-semibold tracking-wide">HYDROGENIUM</p>
             <p className="text-xs text-gray-500 -mt-1">YOSHLIGINGIZNI QAYTARING</p>

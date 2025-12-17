@@ -121,8 +121,8 @@ ${message}`;
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
               className={`pb-3 px-2 border-b-4 transition-all whitespace-nowrap ${activeTab === tab.id
-                  ? "text-[#4a86ad] border-[#4a86ad]"
-                  : "text-gray-500 border-transparent"
+                ? "text-[#4a86ad] border-[#4a86ad]"
+                : "text-gray-500 border-transparent"
                 }`}
             >
               {tab.label}
@@ -133,6 +133,7 @@ ${message}`;
         {/* Content */}
         <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <img
+            loading="lazy"
             src={current.image}
             alt={current.title}
             className="w-full rounded-2xl shadow-2xl object-cover"
