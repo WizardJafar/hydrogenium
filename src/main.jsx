@@ -5,9 +5,9 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import "./index.css";
-import App from "./App";
 import Home from "./Pages/Home";
 import NotFound from "./Pages/Error/NotFound";
+import Admin from "./Pages/Admin";
 import { ToastContainer } from "react-toastify";
 
 const router = createBrowserRouter([
@@ -15,6 +15,10 @@ const router = createBrowserRouter([
     path: "/",
     element: <Home />,
 
+  },
+  {
+    path: "/admin",
+    element: <Admin />,
   },
 
   {

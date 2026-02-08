@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { FaWhatsapp, FaBars, FaTimes, FaTelegramPlane } from "react-icons/fa";
 import logo from "../../assets/logo.png";
 import header from "../../assets/header.png";
@@ -51,6 +52,9 @@ export default function Navbar() {
               {item.label}
             </button>
           ))}
+          <Link to="/admin" className="hover:text-black transition">
+            ADMIN
+          </Link>
         </nav>
 
         {/* Tellegramm + mobile menu */}
@@ -91,6 +95,9 @@ export default function Navbar() {
               {item.label}
             </button>
           ))}
+          <Link to="/admin" className="py-2 border-b text-left">
+            ADMIN
+          </Link>
         </nav>
       </div>
 
