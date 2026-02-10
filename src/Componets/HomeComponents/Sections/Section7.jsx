@@ -103,8 +103,8 @@ export default function Section7() {
     {
       id: "mask",
       label: "MASKA",
-      fullLabel: "VODORODLI SPA MASKA ERDAMIDA",
-      title: "Vodorodli SPA maska erdamida",
+      fullLabel: "VODORODLI SPA MASKA YORDAMIDA",
+      title: "Vodorodli SPA maska yordamida",
       image: maskaOq,
       description: <>Isitish va namlik samaradorlikni oshiradi.</>,
     },

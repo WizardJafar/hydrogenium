@@ -1,0 +1,15 @@
+{
+  "content": {
+    "theme": {
+      "primaryColor": "#2b6cb0",
+      "backgroundColor": "#f7fafc",
+      "textColor": "#1a202c"
+    },
+    "hero": {
+      "title": "Hydrogenium",
+      "subtitle": "Платформа для чистой энергии и технологичных решений.",
+      "ctaText": "Узнать больше"
+    },
+    "textOverrides": []
+  }
+}
