@@ -14,9 +14,10 @@ import { Section11 } from '../Componets/HomeComponents/Sections/Section11';
 import { Section12 } from '../Componets/HomeComponents/Sections/Section12';
 import { Section13 } from '../Componets/HomeComponents/Sections/Section13';
 import Section14 from '../Componets/HomeComponents/Sections/Section14';
-
+// gjfldjfjldjfdsjlfjoiejfrie
 const Home = () => {
     return (
+        // flkdslkfjl;sjfldsjfldsj
         <div>
             <Navbar />
             <Section1 />
